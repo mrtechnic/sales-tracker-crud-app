@@ -1,9 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const Product = require('./src/products/product.model');
-const productsRoute = require('./src/products/product.route');
-const salesRoute = require('./src/sales/sale.route');
-const usersRoute = require('./src/users/user.route');
+const Product = require('./models/product.model');
+const productsRoute = require('./routes/product.route');
+const salesRoute = require('./routes/sale.route');
+const usersRoute = require('./routes/user.route');
 
 const dotenv = require('dotenv');
 

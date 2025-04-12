@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const { createUser, getUsers, getUser, updateUser, deleteUser, logIn, getCurrentUser } = require('./user.controller');
-const { authenticateAdminAccess, authenticateAccess } = require('../middleware/auth.middleware');
+const { authenticateAdminAccess, authenticateAccess } = require('../src/middleware/auth.middleware');
 
 
 router.post('/create', authenticateAdminAccess, createUser);  
