@@ -8,6 +8,7 @@ const productSchema = new mongoose.Schema(
     initialStock: { type: Number, required: true },  
     remainingStock: { type: Number, required: false, default: 0 },  
     price: { type: Number, required: true },
+    branch: { type: mongoose.Schema.Types.ObjectId, ref: 'Branch', required: true},
   },
   { timestamps: true }
 );
