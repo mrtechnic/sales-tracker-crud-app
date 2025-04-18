@@ -1,5 +1,5 @@
-const { generateJWT } = require('../helpers');
-const User = require('./user.model');
+const { generateJWT } = require('../src/helpers/index');
+const User = require('../models/user.model')
 const bcrypt = require('bcrypt'); 
 
 

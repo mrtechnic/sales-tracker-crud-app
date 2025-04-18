@@ -1,4 +1,6 @@
-const branchSchema = new mongoose.schema({
+const mongoose = require('mongoose')
+
+const branchSchema = new mongoose.Schema({
   name: { type: String, required: true, unique: true },
   location: String,
 }, { timestamps: true});
